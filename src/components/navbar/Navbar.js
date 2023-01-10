@@ -1,5 +1,5 @@
 import './Navbar.scss'; 
-import { LinkedIn } from '@mui/icons-material';
+import { LinkedIn, GitHub } from '@mui/icons-material';
 
 const Navbar = () => {
     return (
@@ -8,6 +8,7 @@ const Navbar = () => {
                 <div className="left">
                     <a href="#intro" className="name">Freddy Liu</a>
                     <a href="https://www.linkedin.com/in/freddy-liu-153983206/"><LinkedIn className="icon"/></a>
+                    <a href="https://github.com/FreddyLiu06"><GitHub className="icon" /></a>
                 </div>
                 <div className="right">
                     <div className="items">

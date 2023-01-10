@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div className="projects" id="projects">
             <h1>Projects</h1>
-            <div className="projectss">
+            <div className="projectss page">
             <div className="projects-entry">
                 <h3 className="projectname">Wireless Fall Detection Sensor</h3>
                 <p className="projectdescription">Investigated wearable-free sensing and fall detection in individual research project supervised by Professor Wang at the Hong Kong Polytechnic University. Gathered 8 first-hand datasets of 100+ instances each using a TI mmWave FMCW sensor and processed data to train and create support vector machine model using Python sklearn library. Created prototype device by combing model with signal processing.</p>
