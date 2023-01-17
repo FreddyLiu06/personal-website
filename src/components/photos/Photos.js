@@ -4,9 +4,18 @@ import { useEffect, useState } from 'react';
 import photostuff from '../../PhotoData';
 
 const Photos = () => {
-    console.log(photostuff)
-    const [selected, setSelected] = useState("bhs");
-    const [data, setData] = useState([])
+    const [selected, setSelected] = useState("bhs"); // Keeps track of which button it is currently on
+    const [data, setData] = useState([]); // Image paths
+
+    const [slideNum, setSlideNum] = useState(0); // Keeps track of which slide the slider is on
+
+    const handleClick = (direction) => {
+        if (direction === "left") {
+            setSlideNum(slideNum > 0 ? slideNum - 1 : data.length - 1); // Goes left
+        } else {
+            setSlideNum(slideNum < data.length - 1 ? slideNum + 1 : 0); // Goes right
+        }
+    }
 
     const list = [
         {
@@ -24,6 +33,10 @@ const Photos = () => {
         {
             id: "cdas",
             title: "Cape d'Aguilar Sunrise"
+        },
+        {
+            id: "sc",
+            title: "Suicide Cliff",
         }
     ]
 
@@ -41,6 +54,9 @@ const Photos = () => {
                 break;
             case "cdas":
                 setData(photostuff.cdas);
+                break;
+            case "sc":
+                setData(photostuff.sc);
                 break;
             default:
                 setData(photostuff.bhs);
@@ -61,12 +77,12 @@ const Photos = () => {
             <div className="slider">
                 <div className="container">
                     <div className="item">
-                        
+                        <img src={data[slideNum]}/>
                     </div>
                 </div>
             </div>
-            <img src={require('../../assets/arrow.jpg')} className="arrow left" placeholderStyle={{backgroundColor: 'transparent'}}></img>
-            <img src={require('../../assets/arrow.jpg')} className="arrow right"></img>
+            <img src={require('../../assets/arrow.jpg')} className="arrow left" placeholderStyle={{backgroundColor: 'transparent'}} onClick={() => {handleClick('left')}}></img>
+            <img src={require('../../assets/arrow.jpg')} className="arrow right" onClick={()=>{handleClick('right')}}></img>
         </div>
     
     )
