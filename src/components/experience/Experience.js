@@ -7,6 +7,11 @@ const Experience = () => {
             <h1>Experiences</h1>
             <div className = "experiences page">
             <div className = "experiences-entry">
+                <h3 className="entryTitle"><b>Undergraduate Researcher</b> | University of Pennsylvania</h3>
+                <p className="entryDates">January 2023 - Present</p>
+                <p className="entryText">Assist in <b>wearable free hand gesture recognition</b> using wireless sensing technology and machine learning. Supervised by <a href="https://cis.upenn.edu/~mingminz" target="_blank" style={{textDecoration: 'underline', color: 'blue'}}>Professor Mingmin Zhao</a>. Improve and calibrate vision-based system to incorperate <b>3D ground truth sensor</b> and improve training model performance.</p>
+            </div>
+            <div className = "experiences-entry">
                 <h3 className="entryTitle"><b>Teaching Assistant</b> | University of Pennsylvania</h3>
                 <p className="entryDates">August 2022 - Present</p>
                 <p className="entryText">Working as a teaching assistant for the class <b>Data Structures and Algorithms</b>. Hold <b>weekly office hours</b> for a class of <i>200+ students</i> to understand topics and homework questions. <b>Co-lead weekly recitation</b> for group of 15 students to review material. Write homework questions, obfuscations, and solutions. <b>Plan and run review sessions</b> on topics including complexity theory, divide and conquer algorithms, graph algorithms, hashing, binary trees, and more.</p>
