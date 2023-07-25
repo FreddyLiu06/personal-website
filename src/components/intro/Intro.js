@@ -7,7 +7,7 @@ const Intro = () => {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="wrapper">
-                    <h1>Hello</h1>
+                    <h1>Hello!</h1>
                     <h2>I'm <b>Freddy</b>, a student at the University of Pennsylvania pursuing a bachelor's degree in Computer Science </h2>
                     <p>Currently, I'm focused on exploring my interests in machine learning, algorithms, and other areas of computer science through my classes and research projects. In my free time I enjoy playing basketball, hiking and crocheting. Thank you for taking a look at my page.</p>
                     <div className="buttons">
