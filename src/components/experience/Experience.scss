@@ -28,7 +28,12 @@
         width: 55%;
         scrollbar-width: none;
         &::-webkit-scrollbar {
-            display: none;
+            background: lightgrey;
+            width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: grey;
         }
         margin-bottom: 2.5%;
     }
