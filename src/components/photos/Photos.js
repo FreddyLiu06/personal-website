@@ -68,7 +68,7 @@ const Photos = () => {
     
         <div className="photos" id="photos">
             <h1>Photos</h1>
-            <p>One of my hobbies is to hike around Hong Kong and take photos of the scenery, take a look at some of the pictures I've captured in the past.</p>
+            <p>I enjoy going to places where I can take nice photos of the surrounding environment, here are some of the pictures I've captured in the past.</p>
             <ul>
                 {list.map((item) => {
                     return <Photolist title={item.title} active={selected === item.id} setSelected = {setSelected} id = {item.id}/>

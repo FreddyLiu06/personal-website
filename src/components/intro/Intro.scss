@@ -56,3 +56,29 @@
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .intro .left {
+        flex: 1.0;
+        height: 100%;
+        padding: 0;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .intro .left .wrapper {
+        margin-top: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 80%;
+        text-align: justify;
+    }
+
+    .intro .left .wrapper .button {
+        font-size: 10px;
+    }
+    
+    .intro .right {
+        display: none;
+    }
+}
