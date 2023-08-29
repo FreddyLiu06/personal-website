@@ -10,6 +10,9 @@ const Experience = () => {
                 <h3 className="entryTitle"><b>Undergraduate Researcher</b> | University of Pennsylvania</h3>
                 <p className="entryDates">January 2023 - Present</p>
                 <p className="entryText">Achieve <b>panoramic radar imaging</b> by combining signal processing and machine learning techniques. Supervised by <a href="https://cis.upenn.edu/~mingminz" target="_blank" style={{textDecoration: 'underline', color: 'blue'}}>Professor Mingmin Zhao</a>. Improve ground truth data labelling effiency by 90% by <b>iteratively training</b> a <b>depth map segmentation model</b> to automate tasks. Enable <b>circular object detection</b> capabilities by implementing a custom <b>panoramic Regional Proposal Network</b>. Integrated with a multi-task model network built on the <b>Detectron2</b> library.</p>
+                <br></br>
+                <b>Publications:</b>
+                <p>x. Lai, x. Luo, <b>Yifei (Freddy) Liu</b>, x. Zhao, "Enabling Visual Recognition at Radio Frequency", submitted to ACM MobiCom 2024</p>
             </div>
             <div className = "experiences-entry">
                 <h3 className="entryTitle"><b>Teaching Assistant</b> | University of Pennsylvania</h3>
