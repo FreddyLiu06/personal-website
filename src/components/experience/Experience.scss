@@ -11,11 +11,13 @@
 
     h1 {
         font-size: 36px;
-        padding-bottom: 0.75%;
+        line-height: normal;
+        text-align: center;
         scrollbar-width: none;
         &::-webkit-scrollbar {
             display: none;
         }
+        padding-bottom: 30px;
     }
 
     h3 {
@@ -38,10 +40,12 @@
         margin-bottom: 2.5%;
     }
 
+
     .experiences-entry {
         justify-content: center;
         align-items: center;
         padding: 45px;
+        padding-top: 20px;
         padding-bottom: 0px;
     }
 
